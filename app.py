@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 # Background colour
-st.markdown('<style>.stApp {background-color: #f0f8ff;} h1, h2, h3, p, label, .stMarkdown {color: #1a1a2e !important;}</style>', unsafe_allow_html=True)
+st.markdown('<style>.stApp {background: linear-gradient(135deg, #f5f7fa, #c3cfe2);} h1,h2,h3,p,label,.stMarkdown{color:#1a1a2e !important;} .stButton>button{background-color:#0066cc !important;color:white !important;border:none !important;border-radius:10px !important;font-size:17px !important;font-weight:bold !important;padding:14px !important;}</style>', unsafe_allow_html=True)
 
 # Title
 st.title("🏥 Neonatal Jaundice Severity Predictor (NJS-P)")
