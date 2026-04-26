@@ -190,4 +190,4 @@ if st.button("Predict Severity", use_container_width=True):
             st.metric("Confidence", str(round(probability[0] * 100, 1)) + "%")
 
 st.divider()
-st.caption("This tool is intended for research and decision support purposes only. It does not replace clinical judgement. All assessments should be validated by a qualified healthcare professional.")
+st.markdown("This tool is intended for research and decision support purposes only. It does not replace clinical judgement. All assessments should be validated by a qualified healthcare professional.")
