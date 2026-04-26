@@ -1,7 +1,21 @@
 import streamlit as st
 import joblib
 import numpy as np
+import threading
+import requests
+import time
 
+def keep_alive():
+    while True:
+        time.sleep(270)  # every 4.5 minutes
+        try:
+            requests.get("https://neonatal-jaundiceseveritypredictionapp.streamlit.app")
+        except:
+            pass
+
+thread = threading.Thread(target=keep_alive)
+thread.daemon = True
+thread.start()
 # Load model and scaler
 model = joblib.load('jaundice_severity_model.pkl')
 scaler = joblib.load('jaundice_severity_scaler.pkl')
