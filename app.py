@@ -9,7 +9,6 @@ scaler = joblib.load('jaundice_severity_scaler.pkl')
 # Page config
 st.set_page_config(
     page_title="Neonatal Jaundice Severity Predictor ",
-    page_icon="🩸",
     layout="centered"
 )
 
